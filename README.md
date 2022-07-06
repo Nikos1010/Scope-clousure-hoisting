@@ -1,1 +1,1 @@
-# Scope-clousure-joisting
+# Scope-clousure-hoisting
