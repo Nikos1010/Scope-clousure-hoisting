@@ -40,8 +40,8 @@ function moneyBoxNoith() {
     }
 };
 
-const moneyAna = moneyBoxNoith();
-moneyAna.saveCoins(10);
-moneyAna.saveCoins(1);
-moneyAna.takeCoins(3);
-moneyAna.showCoins();
+const moneyBoxAna = moneyBoxNoith();
+moneyBoxAna.saveCoins(10);
+moneyBoxAna.saveCoins(1);
+moneyBoxAna.takeCoins(3);
+moneyBoxAna.showCoins();
