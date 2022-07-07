@@ -1,0 +1,20 @@
+{
+  "name": "scope-clousure-hoisting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikos1010/Scope-clousure-joisting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikos1010/Scope-clousure-joisting/issues"
+  },
+  "homepage": "https://github.com/Nikos1010/Scope-clousure-joisting#readme"
+}
