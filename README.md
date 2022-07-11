@@ -1,8 +1,7 @@
 <h1 align="center">
-		Examples
+		Apuntes
 </h1>
 Encontraremos ejemplos sobre el scope, hoisting y el closure.
-
 ## Scope
 Cuando hablamos de Scope, nos referimos al alcance que tiene una variable dentro de un programa.
 
@@ -68,4 +67,61 @@ function fruits() {
 }
 
 fruits();
+```
+
+## Hoisting
+Cuando nos referimos a hoisting o elevacion, es en torno a como se comportan las declaraciones de las variables cuando se ejecuta el programa.
+Vamos a observar un ejemplo con var:
+```javascript
+console.log(name); //undefined
+var name = 'Noith';
+```
+Al escribir este codigo la variable name sube y se asigna undefined, es como si pasara esto:
+```javascript
+var name;
+console.log(name); //undefined
+var name = 'Noith';
+```
+Con let y const:
+```javascript
+console.log(food); //Error food is not defined
+let food = 'Cake';
+```
+En este caso observamos un error, esto se debe al temporal dead zone, el cual es como funciona Javascript. Javascript lee linea por linea el codigo, si no encuentra la variable en este caso, mostrara un error, aunque se elevan las variables como con var, con let y const no estan inicializadas, por lo tanto muestra un error, entonces el temporal dead zone es ese espacio donde se encuentran las variables sin inicializar, esperando ser llamadas.
+
+## Closure
+Los closure es una función que hace referencia a variables en el ámbito externo desde su ámbito interno. Un ejemplo seria este:
+```javascript
+const moneyBox = (function() {
+    let _quantityCoins = 0;
+    function saveCoins(coins) {
+        console.log(`Total: ${_quantityCoins}`);
+        return _quantityCoins += coins;
+    }
+    return saveCoins;
+})();
+
+moneyBox(10); // Total 10
+moneyBox(30); // Total 40
+moneyBox(5); // Total 45
+```
+O lo podemos instanciar en varios objetos:
+```javascript
+const moneyBox = function() {
+    let _quantityCoins = 0;
+    function saveCoins(coins) {
+        console.log(`Total: ${_quantityCoins}`);
+        return _quantityCoins += coins;
+    }
+    return saveCoins;
+};
+const noithBox = moneyBox();
+noithBox(5); // Total 5
+noithBox(30);  // Total 35
+noithBox(5);  // Total 40
+
+const leroBox = moneyBox();
+leroBox(10);  // Total 10
+leroBox(3);  // Total 13
+leroBox(8);  // Total 21
 ```
