@@ -2,6 +2,7 @@
 		Examples
 </h1>
 Encontraremos ejemplos sobre el scope, hoisting y el closure.
+
 ## Scope
 Cuando hablamos de Scope, nos referimos al alcance que tiene una variable dentro de un programa.
 
