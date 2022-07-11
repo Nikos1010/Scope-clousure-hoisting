@@ -1,6 +1,9 @@
 <p align="center">
   <h1>Examples<h1>
 </p>
+    
+    
+    
 ## Scope
 Cuando hablamos de Scope, nos referimos al alcance que tiene una variable dentro de un programa.
 
