@@ -1,7 +1,8 @@
 <p align="center">
   <h1>Examples<h1>
 </p>
-  Encontraremos ejemplos del Scope, Hoisting y Closure, cosas importantes que se deben conocer para ser un desarrollador de JavaScript.
+    
+    Encontraremos ejemplos del Scope, Hoisting y Closure, cosas importantes que se deben conocer para ser un desarrollador de JavaScript.
 
 ## Scope
 Cuando hablamos de Scope, nos referimos al alcance que tiene una variable dentro de un programa.
